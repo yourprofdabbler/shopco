@@ -9,19 +9,23 @@
 </head>
 <body>
 
+    <!-- Discount banner -->
     <div class="discount d-flex align-items-center justify-content-center" aria-label="Discount offer">
         <span>Sign up and get 20% off to your first order. <a href="#">Sign Up Now</a></span>
     </div>
+
     <header>
+        <!-- Navigation menu -->
         <div class="container header-container">
             <div class="container-fluid d-flex align-items-center navigation justify-content-between">
+                <!-- hamburger menu -->
                 <div class="hamburger d-block d-xl-none" id="hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
                 <a class="logo" href="#">
-                    <img src="/img/logo.png" alt="logo">
+                    <img src="img/logo.png" alt="logo">
                 </a>
                 <nav class="navbar navbar-expand-lg d-none d-xl-flex" id="navbar">
                     <ul class="navbar-nav d-flex align-items-center justify-content-between">
@@ -29,7 +33,7 @@
                             <div class="dropdown">
                                 <a href="#" class="dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                                     Shop
-                                <img src="/icons/arraw.svg" alt="">
+                                <img src="icons/arraw.svg" alt="">
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-dark">
                                     <li><a class="dropdown-item" href="#">Buy</a></li>
@@ -53,19 +57,59 @@
                 </div>
                 <div class="user-container">
                     <a class="me-1 d-block d-xl-none" id="search-icon" href="#">
-                        <img src="/icons/search-black.svg" alt="search">
+                        <img src="icons/search-black.svg" alt="search">
                     </a>
                     <a class="me-3" href="#">
-                        <img src="/icons/basket.svg" alt="basket">
+                        <img src="icons/basket.svg" alt="basket">
                     </a>
                     <a href="#">
-                        <img src="/icons/login.svg" alt="login">
+                        <img src="icons/login.svg" alt="login">
                     </a>
                 </div>
             </div>
         </div>
     </header>
     
+    <main>
+        <!-- Main section -->
+        <section class="main-section">
+            <div class="container d-flex flex-column flex-xl-row">
+                <div class="main-section_info">
+                    <h1 class="main-section_title">FIND CLOTHES <br> THAT MATCHES <br> YOUR STYLE</h1>
+                    <p class="main-section_description">Browse through our diverse range of meticulously crafted garments, designed <br> to bring out your individuality and cater to your sense of style.</p>
+                    <button class="main-section_btn" type="button">Shop Now</button>
+                    <div class="main-section_advantages d-flex">
+                        <div class="advantage-item d-flex flex-column">
+                            <h2>200+</h2>
+                            <p>International Brands</p>
+                        </div>
+                        <div class="advantage-item d-flex flex-column ps-5">
+                            <h2>2,000+</h2>
+                            <p>High-Quality Products</p>
+                        </div>
+                        <div class="advantage-item d-flex flex-column ps-5">
+                            <h2>30,000+</h2>
+                            <p>Happy Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-section_images">
+                    <img class="main-section_fimage" src="img/firststar.png" alt="star">
+                    <img class="main-section_simage" src="img/secondstar.png" alt="star">
+                </div>
+            </div>
+        </section>
+        <!-- Partners -->
+        <section class="partners">
+            <div class="container partners-container d-flex justify-content-between">
+                <img src="img/versace.png" alt="versace">
+                <img src="img/zara.png" alt="zara">
+                <img src="img/gucci.png" alt="gucci">
+                <img src="img/prada.png" alt="prada">
+                <img src="img/calvin.png" alt="calvin">
+            </div>
+        </section>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
