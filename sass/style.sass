@@ -47,6 +47,8 @@ $primary-black: #000
 $primary-white: #fff    
 $primary-gray: #F2F0F1
 $text-gray: #616060
+$discount-price: #FF3333
+$discount-box: #FFEBEB
 
 // 1 rem == 10px
 html
@@ -240,8 +242,69 @@ a
         min-height: 12.2rem
         padding: 4.5rem 0 
 
+// Arrivals
+.goods
+    &-container
+        padding: 7rem 0
+        border-bottom: 1px solid #D9D9D9
+    h2
+        text-align: center
+        font-family: 'IntegralCF-Bold'
+        font-size: 4.8rem
+        margin-bottom: 5.5rem
+    &-items_container
+        width: 100%
+        margin-bottom: 3rem
+    &-item
+        img
+            margin-bottom: 1.8rem
+        h3
+            font-family: 'Satoshi-Bold'
+            font-size: 2rem
+            letter-spacing: .01rem
+            font-weight: 700
+            margin-bottom: 1rem
+        h4
+            font-family: 'Satoshi-Bold'
+            font-size: 2.4rem 
+    &-btn
+        width: 21.8rem
+        height: 5.2rem
+        background-color: transparent
+        border: 1px solid $primary-gray
+        border-radius: 3rem
+        font-family: 'Satoshi-Medium'
+        font-size: 1.6rem
 
-
+.star-box
+    margin-bottom: .9rem
+    img
+        margin-bottom: 0
+    h5
+        font-family: 'Satoshi-Regular'
+        font-size: 1.4rem
+        margin-bottom: 0
+        span
+            color: $text-gray
+.old-price
+    font-family: 'Satoshi-Regular'
+    font-size: 1.4rem
+    color: gray
+    text-decoration: line-through
+    text-decoration-thickness: 1px
+.discount-percent
+    background-color: $discount-box
+    width: 5.8rem
+    height: 2.8rem
+    border-radius: 2.9rem
+    font-family: 'Satoshi-Medium'
+    font-size: 1.2rem
+    color: $discount-price  
+     
+// Top Selling
+.top-selling
+    border-bottom: none
+    padding: 5.6rem 0
 
 @media (max-width: 767px)
     // =========== Discount banner mobile ==========
@@ -362,13 +425,44 @@ a
     .partners
         min-height: 12.2rem
         background-color: $primary-black
+        margin-bottom: 0
         &-container 
             min-height: 12.2rem
             padding: 4rem 0 
             flex-wrap: wrap
             justify-content: space-around !important
             gap: 1rem
-            
+    
+    // Arrivals
+    .goods
+        &-container
+            padding: 4rem 0
+        h2
+            font-size: 3.2rem 
+            margin-bottom: 3.2rem 
+        &-items_container
+            padding: 0 1rem 
+            height: 30rem 
+            margin-bottom: 2.4rem
+            overflow: hidden 
+        &-item
+            height: 30rem 
+            margin-right: 1.6rem 
+            &_picture
+                margin-bottom: 1.8rem
+                width: 19.8rem 
+                height: 20rem 
+            h3
+                font-size: 1.6rem
+                margin-bottom: 1rem
+            h4
+                font-size: 2rem 
+        &-btn
+            width: 90%
+    .discount-percent
+        width: 4.2rem
+        height: 2rem  
+
 
 @media (min-width: 767px) and (max-width: 1200px)
     // =========== Discount banner middle ==========
@@ -430,15 +524,21 @@ a
     .main-section
         min-height: 66.3rem
         &_info
-            padding: 5rem 1rem 0 1rem
+            padding: 2rem 1rem 0 1rem
+            display: flex
+            justify-content: center
+            flex-direction: column
+            align-items: center
         &_title
             font-size: 5rem
             line-height: 5rem
             margin-bottom: 2.5rem
+            text-align: center
         &_description
             font-size: 2rem
             line-height: 2rem
             margin-bottom: 2.5rem
+            text-align: center
         &_btn
             width: 50%
             height: 5.2rem
@@ -451,7 +551,7 @@ a
             margin-bottom: 2.5rem
         &_advantages
             display: flex
-            justify-content: flex-start
+            justify-content: center
             flex-wrap: wrap
             width: 100%
             .advantage-item:nth-child(1)
@@ -461,9 +561,7 @@ a
         &_images
             width: 100%
             min-height: 90rem
-            background-repeat: no-repeat
             background-position: center
-            background-image: url('../img/boyandgirl.png')
         &_fimage
             position: absolute
             top: 15rem
@@ -486,4 +584,34 @@ a
             flex-wrap: wrap
             justify-content: space-around !important
             gap: 1rem
-            
+    // Arrivals
+    .goods
+        &-container
+            padding: 4rem 0
+        h2
+            font-size: 5rem 
+            margin-bottom: 3.2rem 
+        &-items_container
+            padding: 0 1rem 
+            height: 36rem 
+            margin-bottom: 5rem
+            overflow: hidden 
+        &-item
+            height: 50rem 
+            margin-right: 1.6rem
+            &:nth-child(4)
+                margin-right: 0 
+            &_picture
+                margin-bottom: 1.8rem
+                width: 25rem 
+                height: 25rem 
+            h3
+                font-size: 2rem
+                margin-bottom: 1rem
+            h4
+                font-size: 2rem 
+        &-btn
+            width: 90%
+    .discount-percent
+        width: 4.2rem
+        height: 2rem             
