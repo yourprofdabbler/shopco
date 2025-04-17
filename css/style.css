@@ -345,6 +345,68 @@ a {
   padding: 5.6rem 0;
 }
 
+.top-selling_mb {
+  margin-bottom: 2.8rem;
+}
+
+.browse-section {
+  min-height: 60rem;
+}
+.browse-section_container {
+  background-color: #F0F0F0;
+  padding: 7rem 9rem 6rem 7rem;
+  border-radius: 3rem;
+}
+.browse-section_container h2 {
+  font-family: "IntegralCF-Bold";
+  font-size: 4.8rem;
+  text-align: center;
+  margin-bottom: 6.5rem;
+}
+.browse-section_box {
+  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .browse-section_box {
+    flex-wrap: nowrap;
+  }
+}
+.browse-section_item {
+  position: relative;
+  height: 28.9rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 3rem;
+}
+.browse-section_item h3 {
+  position: absolute;
+  top: 3rem;
+  left: 4rem;
+  font-family: "Satoshi-Bold";
+  font-size: 3.6rem;
+  color: #000;
+}
+
+.first-item {
+  background-image: url("../img/browse-first-picture.png");
+}
+
+.second-item {
+  background-image: url("../img/browse-second-picture.png");
+}
+
+.third-item {
+  background-image: url("../img/browse-third-picture.png");
+}
+
+.fourth-item {
+  background-image: url("../img/browse-fourth-picture.png");
+}
+
 @media (max-width: 767px) {
   .discount {
     height: 3.4rem;
@@ -529,6 +591,14 @@ a {
   .discount-percent {
     width: 4.2rem;
     height: 2rem;
+  }
+  .browse-section_container {
+    padding: 2rem 2rem 2rem 2rem;
+    border-radius: 3rem;
+  }
+  .browse-section_container h2 {
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
   }
 }
 @media (min-width: 767px) and (max-width: 1200px) {
